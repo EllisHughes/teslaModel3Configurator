@@ -1,0 +1,458 @@
+$primaryBG: #fbfafa;
+html body {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  width: 100vw;
+  display: flex;
+}
+
+header {
+  display: flex;
+  width: 100vw;
+  height: 7.5vh;
+  top: auto;
+  background-color: #111111;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.branding {
+  padding: 0% 2.5%;
+  width: 8%;
+  align-self: center;
+  text-align: center;
+}
+
+.logo {
+  max-width: 100%;
+  padding-top: 5px;
+  filter: brightness(0) invert(1);
+  transition: 0.5s ease-in;
+}
+
+.logo:hover {
+  max-width: 100%;
+  padding-top: 5px;
+  filter: brightness(1) invert(0);
+  transition: 1s ease-in;
+}
+
+.topMenu {
+  width: 90%;
+  height: 100%;
+}
+
+.main {
+  width: 80vw;
+  height: 92.5vh;
+  max-height: 92.5vh;
+  background-color: $primaryBG;
+}
+
+.side {
+  width: 20vw;
+  background-color: $primaryBG;
+  border-left: 1px solid #0000002d;
+
+  padding: 5%;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  z-index: 999;
+}
+
+.side h1 {
+  font-weight: 400;
+  padding-bottom: 10px;
+  font-size: 26px;
+}
+
+.side h2 {
+  font-weight: 400;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.side h3 {
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.trimButtonContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+}
+
+.trimButton {
+  margin: 10px 0px !important;
+  padding: 15px 10px;
+  border: 2px solid #dddddd !important;
+  background-color: $primaryBG;
+  border-radius: 30px !important;
+  float: left !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  color: black !important;
+  font-size: 14px !important;
+  text-transform: none !important;
+  transition: 0.25s ease-in;
+  transition: 0.2s ease-out;
+}
+
+.trimButton:hover {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+}
+
+.trimButton.active {
+  border: 2px solid #007fff !important;
+  box-shadow: 0px 0px 8px #007fff;
+}
+
+.trimButton span {
+  padding: 0px 10px;
+}
+
+#colorTitle {
+  padding-top: 20px;
+}
+
+.colorButtonContainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+
+.colorButton {
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+  border: 2px solid #dddddd !important;
+  transition: 0.25s ease-in;
+  transition: 0.2s ease-out;
+}
+
+.colorButton:hover {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+}
+
+.colorButton.active {
+  border: 2px solid #007fff !important;
+  box-shadow: 0px 0px 8px #007fff;
+}
+
+#colorWhite {
+  background-image: url("images/colorWhite.png");
+  background-size: 100%;
+}
+#colorBlack {
+  background-image: url("images/colorBlack.png");
+  background-size: 100%;
+}
+#colorSilver {
+  background-image: url("images/colorSilver.png");
+  background-size: 100%;
+}
+#colorBlue {
+  background-image: url("images/colorBlue.png");
+  background-size: 100%;
+}
+#colorRed {
+  background-image: url("images/colorRed.png");
+  background-size: 100%;
+}
+
+.priceBox {
+  display: flex;
+  justify-content: center;
+}
+
+#pound {
+  font-size: 28px;
+  font-weight: 400;
+  padding-top: 20px;
+  text-align: center;
+}
+
+#price {
+  font-size: 28px;
+  font-weight: 400;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.priceContainer {
+  display: flex;
+  width: 100% !important;
+  padding-top: 5%;
+}
+
+.continueButton {
+  width: 100%;
+  margin: 10px 0px !important;
+  padding: 15px 10px;
+  border: 2px solid #dddddd !important;
+  background-color: $primaryBG;
+  border-radius: 30px !important;
+  justify-content: space-between !important;
+  color: black !important;
+  font-size: 18px !important;
+  font-weight: 400;
+  text-transform: none !important;
+  transition: 0.25s ease-in;
+  transition: 0.2s ease-out;
+}
+
+#continue {
+  text-align: center;
+}
+
+.continueButton:hover {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  border: 2px solid #007fff !important;
+}
+
+.continueButton.active {
+  border: 2px solid #007fff !important;
+  box-shadow: 0px 0px 8px #007fff;
+}
+
+//IMAGE SECTION
+
+.productDetail {
+  height: 100%;
+}
+.imagery {
+  position: relative;
+  height: 100%;
+  background-color: $primaryBG;
+  transition: 0.3s;
+}
+
+.imagery img {
+  position: relative;
+  left: -5%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top;
+  animation: fadein 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.specs {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 5%;
+}
+
+.specData {
+  width: 150px;
+  padding: 0% 5%;
+  font-weight: 300;
+  text-align: center;
+}
+
+.top {
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 5px;
+}
+
+.bottom {
+  padding-top: 5px;
+  display: block;
+}
+
+#zeroSixty {
+  display: inline;
+  font-size: 48px;
+  font-weight: 300;
+}
+
+#zeroSixtyLabel {
+  display: inline;
+  text-align: center;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+#seconds {
+  display: inline;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+#range {
+  display: inline;
+  font-size: 48px;
+  font-weight: 300;
+}
+
+#rangeLabel {
+  display: inline;
+  text-align: center;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+#miles {
+  display: inline;
+  text-align: center;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+#topSpeed {
+  display: inline;
+  font-size: 48px;
+  font-weight: 300;
+}
+
+#topSpeedLabel {
+  display: inline;
+  text-align: center;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+#mph {
+  display: inline;
+  text-align: center;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
+
+.colorButtonContainer .colorButton .white.active {
+  background-color: $primaryBG;
+}
+
+.colorButtonContainer .colorButton .black.active {
+  background-color: #5f5f5f;
+}
+
+.colorButtonContainer .colorButton .silver.active {
+  background-color: #6b717b;
+}
+
+.colorButtonContainer .colorButton .blue.active {
+  background-color: #2756ae;
+}
+
+.colorButtonContainer .colorButton .red.active {
+  background-color: #c8111d00;
+}
+
+@media only screen and (max-width: 1600px) {
+  .side h1 {
+    font-size: 23px;
+  }
+  .specs {
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 5%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .main {
+    width: 75vw;
+  }
+  .side {
+    width: 25vw;
+    padding: 3%;
+    h1 {
+      font-size: 22px;
+    }
+    h3 {
+      font-size: 15px;
+    }
+  }
+  .specs {
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .App {
+    position: inherit;
+  }
+  header {
+    width: 100vw;
+  }
+  .logo {
+    min-width: 100px;
+  }
+  .specs {
+    width: 100vw;
+    height: 40%;
+  }
+  .side {
+    width: 100vw;
+    h1 {
+      padding: 25px;
+    }
+  }
+  .sideContainer {
+    padding: 25px;
+  }
+  .main {
+    width: 100vw;
+  }
+  .priceContainer {
+    padding-top: 20px;
+  }
+  .imagery img {
+    position: initial;
+  }
+  main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .specs {
+    width: 100vw;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
